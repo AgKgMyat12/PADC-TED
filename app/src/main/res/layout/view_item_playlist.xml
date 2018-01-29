@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_small">
+
+    <ImageView
+        android:id="@+id/iv_playlist"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dummy_img" />
+
+    <TextView
+        android:id="@+id/tv_number_of_talks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_playlist"
+        android:layout_marginBottom="@dimen/margin_medium_2"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:text="@string/number_of_talks"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/text_regular_2x" />
+
+    <TextView
+        android:id="@+id/tv_playlist_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_number_of_talks"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_toEndOf="@id/tv_number_of_talks"
+        android:text="@string/playlist_duration"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/text_regular_2x" />
+
+    <ImageView
+        android:id="@+id/menu_playlist_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_playlist"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:padding="@dimen/margin_medium"
+        android:src="@drawable/ic_more_vert_24dp" />
+
+    <TextView
+        android:id="@+id/tv_playlsit_title"
+        style="@style/TalkTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_number_of_talks"
+        android:layout_alignLeft="@id/tv_number_of_talks"
+        android:text="@string/playlist_title" />
+
+</RelativeLayout>

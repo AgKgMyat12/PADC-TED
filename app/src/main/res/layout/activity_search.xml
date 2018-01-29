@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_medium_2"
+                android:hint="@string/search_hint"
+                android:textSize="@dimen/text_regular_3x" />
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lbl_recommended_topics"
+                    style="@style/SearchText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium_2"
+                    android:text="@string/recommended_topics" />
+
+                <com.bnkk.padc_ted.components.SmartRecyclerView
+                    android:id="@+id/rv_recommended_topics"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/btn_show_all_topics"
+                    style="@style/SearchText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/margin_medium"
+                    android:paddingLeft="@dimen/margin_xxlarge"
+                    android:paddingTop="@dimen/margin_medium"
+                    android:text="@string/show_all_topics" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lbl_recommended_speakers"
+                    style="@style/SearchText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium_2"
+                    android:text="@string/recommended_speakers" />
+
+                <com.bnkk.padc_ted.components.SmartRecyclerView
+                    android:id="@+id/rv_recommended_speakers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/btn_show_all_speakers"
+                    style="@style/SearchText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/margin_medium"
+                    android:paddingLeft="@dimen/margin_xxlarge"
+                    android:paddingTop="@dimen/margin_medium"
+                    android:text="@string/show_all_speakers" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lbl_recommended_subtitle_languages"
+                    style="@style/SearchText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium_2"
+                    android:text="@string/recommended_subtitle_languages" />
+
+                <com.bnkk.padc_ted.components.SmartRecyclerView
+                    android:id="@+id/rv_recommended_subtitle_languages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/btn_show_all_subtitle_languages"
+                    style="@style/SearchText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/margin_medium"
+                    android:paddingLeft="@dimen/margin_xxlarge"
+                    android:paddingTop="@dimen/margin_medium"
+                    android:text="@string/show_all_subtitle_languages" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lbl_recommended_events"
+                    style="@style/SearchText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium_2"
+                    android:text="@string/recommended_events" />
+
+                <com.bnkk.padc_ted.components.SmartRecyclerView
+                    android:id="@+id/rv_recommended_events"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/btn_show_all_events"
+                    style="@style/SearchText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/margin_medium"
+                    android:paddingLeft="@dimen/margin_xxlarge"
+                    android:paddingTop="@dimen/margin_medium"
+                    android:text="@string/show_all_events" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_medium"
+    android:layout_marginRight="@dimen/margin_medium"
+    android:layout_marginTop="@dimen/margin_medium">
+
+    <ImageView
+        android:id="@+id/iv_talk_bg_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dummy_img" />
+
+    <TextView
+        android:id="@+id/tv_talk_title"
+        style="@style/TalkTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_talk_bg_img"
+        android:layout_marginBottom="@dimen/margin_medium_2"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_toLeftOf="@+id/menu_talk_item"
+        android:text="@string/talk_title" />
+
+    <TextView
+        android:id="@+id/tv_speaker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_talk_title"
+        android:layout_alignLeft="@id/tv_talk_title"
+        android:text="@string/speaker_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_regular" />
+
+    <TextView
+        android:id="@+id/tv_duration"
+        style="@style/TalkDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_talk_bg_img"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium_2"
+        android:text="@string/talks_duration" />
+
+    <ImageView
+        android:id="@+id/menu_talk_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_duration"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/margin_medium"
+        android:src="@drawable/ic_more_vert_24dp" />
+</RelativeLayout>

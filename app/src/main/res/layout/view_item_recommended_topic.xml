@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_first_topic"
+    style="@style/SearchRecommendedText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:drawableLeft="@drawable/ic_local_offer_24dp"
+    android:drawablePadding="@dimen/margin_medium_3"
+    android:padding="@dimen/margin_medium"
+    android:text="@string/recommended_topic_sample" />

@@ -1,4 +1,35 @@
 <resources>
     <string name="app_name">PADC-TED</string>
     <string name="action_settings">Settings</string>
+    <string name="action_privacy_policy">Privacy policy</string>
+    <string name="action_feedback">Feedback</string>
+    <string name="action_log_in">Log in</string>
+    <string name="newest">Newest</string>
+    <string name="trending">Trending</string>
+    <string name="most_viewed">Most viewed</string>
+    <string name="hidden_gems">Hidden gems</string>
+    <string name="msg_generic_no_data">NO Data to display !!!</string>
+    <string name="talk_title">What comes after tragedy? Forgiveness</string>
+    <string name="speaker_name">Edsel Salvana</string>
+    <string name="talks_duration">12:46</string>
+    <string name="ted_radio_hour_on_npr">TED Radio Hour on NPR</string>
+    <string name="sincerely_x">Sincerely, X</string>
+    <string name="podcast_title">The Big Five</string>
+    <string name="podcast_detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec hendrerit lectus. Donec molestie est a lectus congue, vel suscipit ligula mattis. Ut dictum et nisi nec ultrices. Proin id venenatis sem, vitae efficitur urna.</string>
+    <string name="search_hint">Search TED Talks</string>
+    <string name="recommended_topics">Recommended Topics</string>
+    <string name="recommended_topic_sample">Food</string>
+    <string name="show_all_topics">Show all Topics</string>
+    <string name="recommended_speakers">Recommended speakers</string>
+    <string name="recommended_speaker_sample">Wanis Kabbaj</string>
+    <string name="show_all_speakers">Show all speakers</string>
+    <string name="recommended_subtitle_language_sample">Indonesian</string>
+    <string name="recommended_subtitle_languages">Recommended subtitle languages</string>
+    <string name="show_all_subtitle_languages">Show all substitle languages</string>
+    <string name="recommended_events">Recommended events</string>
+    <string name="recommended_event_sample">TED2016</string>
+    <string name="show_all_events">Show all events</string>
+    <string name="number_of_talks">7 talks</string>
+    <string name="playlist_duration">1:12:27</string>
+    <string name="playlist_title">Why not walk it out?</string>
 </resources>

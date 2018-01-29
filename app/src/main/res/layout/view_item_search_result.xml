@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_marginTop="@dimen/margin_small"
+    android:paddingLeft="@dimen/margin_medium_2">
+
+    <ImageView
+        android:id="@+id/iv_talk_img"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dummy_img" />
+
+    <TextView
+        android:id="@+id/tv_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_talk_img"
+        android:layout_alignRight="@id/iv_talk_img"
+        android:layout_margin="@dimen/margin_medium"
+        android:background="@color/dark"
+        android:padding="@dimen/margin_extra_small"
+        android:text="@string/talks_duration"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_regular" />
+
+    <TextView
+        android:id="@+id/tv_speaker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_talk_img"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_toEndOf="@id/iv_talk_img"
+        android:text="@string/speaker_name"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_regular" />
+
+    <TextView
+        android:id="@+id/tv_talk_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_speaker"
+        android:layout_below="@id/tv_speaker"
+        android:layout_marginBottom="@dimen/margin_medium_2"
+        android:layout_toLeftOf="@+id/menu_search_result_item"
+        android:text="@string/talk_title"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_regular_2x"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/menu_search_result_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/margin_medium"
+        android:src="@drawable/ic_more_vert_24dp"
+        android:tint="@color/grey" />
+
+</RelativeLayout>

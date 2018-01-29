@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_medium">
+
+    <ImageView
+        android:id="@+id/iv_talk_bg_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dummy_img" />
+
+    <ImageView
+        android:id="@+id/iv_ted_radio_hr_on_npr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_talk_bg_img"
+        android:layout_margin="@dimen/margin_medium_2"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ted_radio_hr_on_npr" />
+
+    <TextView
+        android:id="@+id/tv_podcast_title"
+        style="@style/PodcastTitle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_talk_bg_img"
+        android:layout_margin="@dimen/margin_medium"
+        android:text="@string/podcast_title" />
+
+    <TextView
+        android:id="@+id/tv_podcast_detail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_podcast_title"
+        android:layout_below="@id/tv_podcast_title"
+        android:layout_marginBottom="@dimen/margin_medium_2"
+        android:lineSpacingMultiplier="1.2"
+        android:text="@string/podcast_detail"
+        android:textColor="@color/secondary_text" />
+
+    <ImageView
+        android:id="@+id/menu_podcast_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_duration"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tv_podcast_title"
+        android:padding="@dimen/margin_medium"
+        android:src="@drawable/ic_more_vert_24dp"
+        android:tint="@color/secondary_text" />
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/lbl_ted_radio_hour"
+            style="@style/ButtonTab"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_tab_high"
+            android:layout_weight="3"
+            android:text="@string/ted_radio_hour_on_npr" />
+
+        <TextView
+            android:id="@+id/lbl_sincerely_x"
+            style="@style/ButtonTab"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_tab_high"
+            android:layout_weight="2"
+            android:text="@string/sincerely_x" />
+    </LinearLayout>
+
+    <com.bnkk.padc_ted.components.SmartRecyclerView
+        android:id="@+id/rv_podcasts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
