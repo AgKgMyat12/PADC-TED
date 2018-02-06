@@ -9,7 +9,7 @@ import com.google.gson.annotations.SerializedName;
 public class ResultsVO {
 
     @SerializedName("search_result_id")
-    private int searchResulId;
+    private int searchResultId;
 
     @SerializedName("title")
     private String title;
@@ -26,8 +26,8 @@ public class ResultsVO {
     @SerializedName("result_id")
     private int resultId;
 
-    public int getSearchResulId() {
-        return searchResulId;
+    public int getSearchResultId() {
+        return searchResultId;
     }
 
     public String getTitle() {
@@ -50,8 +50,8 @@ public class ResultsVO {
         return resultId;
     }
 
-    public void setSearchResulId(int searchResulId) {
-        this.searchResulId = searchResulId;
+    public void setSearchResultId(int searchResultId) {
+        this.searchResultId = searchResultId;
     }
 
     public void setTitle(String title) {

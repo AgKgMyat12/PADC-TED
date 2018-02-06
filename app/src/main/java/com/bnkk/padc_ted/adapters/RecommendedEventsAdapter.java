@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.bnkk.padc_ted.R;
+import com.bnkk.padc_ted.delegates.SearchDelegates;
 import com.bnkk.padc_ted.utils.AppConstants;
 import com.bnkk.padc_ted.viewholders.RecommendedEventsViewHolder;
 
@@ -17,15 +18,17 @@ import com.bnkk.padc_ted.viewholders.RecommendedEventsViewHolder;
 public class RecommendedEventsAdapter extends RecyclerView.Adapter<RecommendedEventsViewHolder> {
 
     private LayoutInflater mLayoutInflater;
+    private SearchDelegates mDelegates;
 
-    public RecommendedEventsAdapter(Context context) {
+    public RecommendedEventsAdapter(Context context, SearchDelegates searchDelegates) {
         mLayoutInflater = LayoutInflater.from(context);
+        mDelegates = searchDelegates;
     }
 
     @Override
     public RecommendedEventsViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = mLayoutInflater.inflate(R.layout.view_item_recommended_event, parent, false);
-        return new RecommendedEventsViewHolder(view);
+        return new RecommendedEventsViewHolder(view,mDelegates);
     }
 
     @Override

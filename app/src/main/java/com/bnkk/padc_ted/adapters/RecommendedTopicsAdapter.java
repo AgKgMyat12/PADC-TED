@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.bnkk.padc_ted.R;
+import com.bnkk.padc_ted.delegates.SearchDelegates;
 import com.bnkk.padc_ted.utils.AppConstants;
 import com.bnkk.padc_ted.viewholders.RecommendedTopicsViewHolder;
 
@@ -17,15 +18,17 @@ import com.bnkk.padc_ted.viewholders.RecommendedTopicsViewHolder;
 public class RecommendedTopicsAdapter extends RecyclerView.Adapter<RecommendedTopicsViewHolder> {
 
     private LayoutInflater mLayoutInflater;
+    private SearchDelegates mDelegates;
 
-    public RecommendedTopicsAdapter(Context context) {
+    public RecommendedTopicsAdapter(Context context, SearchDelegates searchDelegates) {
         mLayoutInflater = LayoutInflater.from(context);
+        mDelegates = searchDelegates;
     }
 
     @Override
     public RecommendedTopicsViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = mLayoutInflater.inflate(R.layout.view_item_recommended_topic, parent, false);
-        return new RecommendedTopicsViewHolder(view);
+        return new RecommendedTopicsViewHolder(view,mDelegates);
     }
 
     @Override

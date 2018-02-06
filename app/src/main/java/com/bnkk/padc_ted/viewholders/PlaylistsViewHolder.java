@@ -7,9 +7,19 @@ import android.view.View;
  * Created by E5-575G on 1/25/2018.
  */
 
-public class PlaylistsViewHolder extends RecyclerView.ViewHolder {
+public class PlaylistsViewHolder extends BaseViewHolder {
 
     public PlaylistsViewHolder(View itemView) {
         super(itemView);
+    }
+
+    @Override
+    public void setData(Object data) {
+
+    }
+
+    @Override
+    public void onClick(View view) {
+
     }
 }

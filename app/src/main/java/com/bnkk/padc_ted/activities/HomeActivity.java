@@ -1,4 +1,4 @@
-package com.bnkk.padc_ted.Activities;
+package com.bnkk.padc_ted.activities;
 
 import android.content.Intent;
 import android.os.Bundle;

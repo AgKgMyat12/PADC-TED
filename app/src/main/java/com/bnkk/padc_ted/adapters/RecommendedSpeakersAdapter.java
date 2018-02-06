@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.bnkk.padc_ted.R;
+import com.bnkk.padc_ted.delegates.SearchDelegates;
 import com.bnkk.padc_ted.utils.AppConstants;
 import com.bnkk.padc_ted.viewholders.RecommendedSpeakersViewHolder;
 
@@ -17,15 +18,17 @@ import com.bnkk.padc_ted.viewholders.RecommendedSpeakersViewHolder;
 public class RecommendedSpeakersAdapter extends RecyclerView.Adapter<RecommendedSpeakersViewHolder> {
 
     private LayoutInflater mLayoutInflater;
+    private SearchDelegates mDelegates;
 
-    public RecommendedSpeakersAdapter(Context context) {
+    public RecommendedSpeakersAdapter(Context context, SearchDelegates searchDelegates) {
         mLayoutInflater = LayoutInflater.from(context);
+        mDelegates = searchDelegates;
     }
 
     @Override
     public RecommendedSpeakersViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = mLayoutInflater.inflate(R.layout.view_item_recommended_speaker, parent, false);
-        return new RecommendedSpeakersViewHolder(view);
+        return new RecommendedSpeakersViewHolder(view,mDelegates);
     }
 
     @Override

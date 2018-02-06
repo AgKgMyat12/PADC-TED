@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.bnkk.padc_ted.Activities.SearchActivity">
+    tools:context="com.bnkk.padc_ted.activities.SearchActivity">
     <item
         android:id="@+id/action_speaker"
         android:icon="@drawable/ic_keyboard_voice_24dp"

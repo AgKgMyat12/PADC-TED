@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.bnkk.padc_ted.R;
+import com.bnkk.padc_ted.delegates.SearchDelegates;
 import com.bnkk.padc_ted.utils.AppConstants;
 import com.bnkk.padc_ted.viewholders.RecommendedSubtitleLanguagesViewHolder;
 
@@ -17,15 +18,17 @@ import com.bnkk.padc_ted.viewholders.RecommendedSubtitleLanguagesViewHolder;
 public class RecommendedSubtitleLanguagesAdapter extends RecyclerView.Adapter<RecommendedSubtitleLanguagesViewHolder> {
 
     private LayoutInflater mLayoutInflater;
+    private SearchDelegates mDelegates;
 
-    public RecommendedSubtitleLanguagesAdapter(Context context) {
+    public RecommendedSubtitleLanguagesAdapter(Context context, SearchDelegates searchDelegates) {
         mLayoutInflater = LayoutInflater.from(context);
+        mDelegates = searchDelegates;
     }
 
     @Override
     public RecommendedSubtitleLanguagesViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = mLayoutInflater.inflate(R.layout.view_item_recommended_subtitle_language, parent, false);
-        return new RecommendedSubtitleLanguagesViewHolder(view);
+        return new RecommendedSubtitleLanguagesViewHolder(view,mDelegates);
     }
 
     @Override

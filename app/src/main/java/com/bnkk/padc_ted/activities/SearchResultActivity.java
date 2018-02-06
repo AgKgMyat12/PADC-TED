@@ -1,4 +1,4 @@
-package com.bnkk.padc_ted.Activities;
+package com.bnkk.padc_ted.activities;
 
 import android.content.Context;
 import android.content.Intent;
@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 
 import com.bnkk.padc_ted.R;
 import com.bnkk.padc_ted.adapters.SearchResultAdapter;
@@ -48,5 +49,18 @@ public class SearchResultActivity extends BaseActivity {
         rvSearchResult.setLayoutManager(new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false));
         SearchResultAdapter searchResultAdapter = new SearchResultAdapter(getApplicationContext());
         rvSearchResult.setAdapter(searchResultAdapter);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        switch (id) {
+            case android.R.id.home:
+                onBackPressed();
+                break;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }
