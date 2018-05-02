@@ -1,5 +1,8 @@
 package com.bnkk.padc_ted.data.vos;
 
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.PrimaryKey;
+
 import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
@@ -9,9 +12,14 @@ import java.util.List;
  * Created by E5-575G on 1/25/2018.
  */
 
+@Entity(tableName = "podcasts")
 public class PodcastsVO {
 
+    @PrimaryKey(autoGenerate = true)
+    private long id;
+
     @SerializedName("podcast_id")
+    @PrimaryKey
     private int podcastId;
 
     @SerializedName("title")
@@ -25,6 +33,10 @@ public class PodcastsVO {
 
     @SerializedName("segments")
     private List<SegmentsVO> segmentsVOList;
+
+    public long getId() {
+        return id;
+    }
 
     public int getPodcastId() {
         return podcastId;
@@ -48,6 +60,10 @@ public class PodcastsVO {
         }
 
         return segmentsVOList;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public void setPodcastId(int podcastId) {

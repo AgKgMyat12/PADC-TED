@@ -1,9 +1,11 @@
 package com.bnkk.padc_ted.data.models;
 
 import android.arch.lifecycle.ViewModel;
+import android.content.Context;
 import android.util.Log;
 
 import com.bnkk.padc_ted.TEDApp;
+import com.bnkk.padc_ted.data.db.AppDataBase;
 import com.bnkk.padc_ted.network.TEDApi;
 import com.bnkk.padc_ted.network.responses.GetTEDPlayListsResponse;
 import com.bnkk.padc_ted.network.responses.GetTEDPodcastsResponse;
@@ -31,6 +33,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class TEDModel extends ViewModel {
 
     private TEDApi tedApi;
+    private AppDataBase mAppDataBase;
 
     private int talksPageIndex = 1;
     private int playListPageIndex = 1;
@@ -58,8 +61,8 @@ public class TEDModel extends ViewModel {
         tedApi = retrofit.create(TEDApi.class);
     }
 
-    public void initDatabase() {
-
+    public void initDatabase(Context context) {
+        mAppDataBase = AppDataBase.getInMemoryDatabase(context);
     }
 
     @Override
