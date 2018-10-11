@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.bnkk.padc_ted.R;
-import com.bnkk.padc_ted.adapters.PodCastsAdapter;
+import com.bnkk.padc_ted.adapters.PodcastsAdapter;
 import com.bnkk.padc_ted.components.SmartRecyclerView;
 import com.bnkk.padc_ted.data.models.TEDModel;
 
@@ -44,8 +44,8 @@ public class PodcastsFragment extends BaseFragment {
         tedModel.loadPodcasts();
 
         rvPodCasts.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
-        PodCastsAdapter mPodCastsAdapter = new PodCastsAdapter(getContext());
-        rvPodCasts.setAdapter(mPodCastsAdapter);
+        PodcastsAdapter mPodcastsAdapter = new PodcastsAdapter(getContext());
+        rvPodCasts.setAdapter(mPodcastsAdapter);
 
         return view;
     }

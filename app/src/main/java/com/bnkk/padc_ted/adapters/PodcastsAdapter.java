@@ -7,28 +7,28 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.bnkk.padc_ted.R;
-import com.bnkk.padc_ted.viewholders.PodCastsViewHolder;
+import com.bnkk.padc_ted.viewholders.PodcastsViewHolder;
 
 /**
  * Created by E5-575G on 1/25/2018.
  */
 
-public class PodCastsAdapter extends RecyclerView.Adapter<PodCastsViewHolder> {
+public class PodcastsAdapter extends RecyclerView.Adapter<PodcastsViewHolder> {
 
     private LayoutInflater mLayoutInflater;
 
-    public PodCastsAdapter(Context context) {
+    public PodcastsAdapter(Context context) {
         mLayoutInflater = LayoutInflater.from(context);
     }
 
     @Override
-    public PodCastsViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public PodcastsViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = mLayoutInflater.inflate(R.layout.view_item_podcasts, parent, false);
-        return new PodCastsViewHolder(view);
+        return new PodcastsViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(PodCastsViewHolder holder, int position) {
+    public void onBindViewHolder(PodcastsViewHolder holder, int position) {
 
     }
 

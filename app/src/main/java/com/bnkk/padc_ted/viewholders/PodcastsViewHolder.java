@@ -7,9 +7,9 @@ import android.view.View;
  * Created by E5-575G on 1/25/2018.
  */
 
-public class PodCastsViewHolder extends BaseViewHolder {
+public class PodcastsViewHolder extends BaseViewHolder {
 
-    public PodCastsViewHolder(View itemView) {
+    public PodcastsViewHolder(View itemView) {
         super(itemView);
     }
 
